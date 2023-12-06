@@ -14,6 +14,8 @@ The dataset we used is titled ["Monthly average retail prices for food and other
 # How to Run:
 The ```time_series_analysis_data_exploration.ipynb``` file is the notbook in which we did a through data exploration of the dataset. We concluded that using only `Log Transform ` would be helpful for our model.
 
-In the `time_series_analysis_grid_serach.ipynb` file, we did a grid search for the SARIMA model for each of the product in our dataset and saved the weights to a `pickle file`. This was done using multithreading so that we could save time and train multiple SARIMA models at once. 
+In the `time_series_analysis_grid_serach.ipynb` file, we did a grid search for the SARIMA model for each of the product in our dataset and saved the weights to a `pickle file`. This was done using multithreading so that we could save time and train multiple SARIMA models at once. We also have the option of running the training without grid search by passing the parameters we seem fit for the model. Do not forget to update the path to save the weights and load the dataset.
 
-We also have the option of running the training without grid search by passing the parameters we seem fit for the model.
+In the `time_series_analysis_inference.ipynb` file, we do the forcasting. We firstly load the weights and take in the product name and run an inference to find forecast. Do not forget to change the path to the weghts files.
+
+
